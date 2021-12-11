@@ -1,0 +1,14 @@
+Ledger Account Management System
+
+1 - Record order details (order name, client name, order quantity, price, date, raw material quantity required etc)
+2 - Set labor cost, electricity cost and raw material cost
+3 - Calculate Order profit and display on order detail page
+4 - Add clients (name, address, phone number)
+5 - Display all orders
+6 - Add daily production
+7 - View production history
+8 - Show notifcations for upcoming pending payments
+9 - Add personal information of physical staff (name, salary, post etc)
+10 - Add business information of suppliers
+11 - Add and view current inventory
+12 - User authentication 
