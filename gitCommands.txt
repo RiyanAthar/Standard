@@ -1,0 +1,8 @@
+// Create new feature branch
+
+1- git checkout -b create_new_order
+2- make the necessary changes
+3- git add . 
+4- git commit -m "Commit Message"
+5- repeat steps 2-4 multiple times
+6- git push origin create_new_order
