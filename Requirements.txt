@@ -12,3 +12,5 @@ Ledger Account Management System
 10 - Add business information of suppliers
 11 - Add and view current inventory
 12 - User authentication 
+
+suppliers employees raw materials expenses production clients
