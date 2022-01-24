@@ -316,4 +316,16 @@
     }, 200);
   }
 
+  //Api Call
+
+ 
+  // document.getElementById("addPayment").onclick=async () =>{
+  //   const response = await fetch('https://localhost:7061/api/Inventories');
+  //   const myJson = await response.json(); //extract JSON from the http response
+  //   // do something with myJson
+  //   console.log(myJson);
+  // }
+  
+  //addEventListener('onclick', userAction);
+
 })();

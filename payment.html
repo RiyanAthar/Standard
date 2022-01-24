@@ -50,7 +50,6 @@
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
-
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
@@ -66,7 +65,7 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link" href="inventory.html">
+        <a class="nav-link collapsed" href="inventory.html">
           <i class="bi bi-grid"></i>
           <span>Inventory</span>
         </a>
@@ -121,11 +120,12 @@
         </a>
       </li><!-- End Expenses Nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="payment.html">
+        <a class="nav-link" href="payment.html">
           <i class="bi bi-grid"></i>
           <span>Payments</span>
         </a>
        </li><!-- End Payments -->
+
 
     </ul>
 
@@ -135,7 +135,7 @@
 
     <div class="row">
     <div class="col-lg-10 pagetitle">
-      <h1>All Inventory</h1>
+      <h1>All Payments</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -146,40 +146,52 @@
     </div><!-- End Page Title -->
     <div class="col-lg-2">
       <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#largeModal" onclick="showAddModal()">
-        Add New Item
+        Add New Payment
       </button>
 
       <div class="modal fade" id="largeModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Add New Inventory</h5>
+              <h5 class="modal-title">Add New Payment</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3" id="create-inventory-form">
+              <form class="row g-3" id="create-payment-form">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Item Name">
+                  <input type="number" class="form-control" placeholder="Order PO#">
                 </div>
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Item Color">
+                  <input type="text" class="form-control" placeholder="Client Name">
                 </div>
                 <div class="col-md-12">
-                  <input type="number" class="form-control" placeholder="Item Quantity">
+                  <input type="text" class="form-control" placeholder="Order Status">
                 </div>
                 <div class="col-12">
-                  <input type="number" class="form-control" placeholder="Item Size">
+                  <input type="text" class="form-control" placeholder="Order Delivery Date">
                 </div>
-                <div class="col-12">
-                  <input type="text" class="form-control" placeholder="Item Unit">
+                <div class="col-md-12">
+                  <input type="number" class="form-control" placeholder="Order Price">
                 </div>
+                <div class="col-md-12">
+                  <input type="number" class="form-control" placeholder="Received Amount">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Received Amount Date">
+                </div>  
+                <div class="col-md-12">
+                    <input type="number" class="form-control" placeholder="Pending Amount">
+                  </div>
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="Pending Amount Date">
+                  </div>
               </form><!-- End No Labels Form -->
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                onclick="cancelCreateInventory()">Cancel</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="submit-btn">Save changes</button>
-              </div>
+              onclick="cancelCreatePayment()">Cancel</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="submit-btn">Save changes</button>
+            </div>
           </div>
         </div>
       </div><!-- End Large Modal-->
@@ -199,15 +211,20 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Item Color</th>
-                    <th scope="col">Item Quantity</th>
-                    <th scope="col">Item Size</th>
-                    <th scope="col">Item Unit</th>
+                    <th scope="col">#</th>
+                    <th scope="col">Order PO#</th>
+                    <th scope="col">Client name</th>
+                    <th scope="col">Order Status</th>
+                    <th scope="col">Order Delivery Date</th>
+                    <th scope="col">Order Price</th>
+                    <th scope="col">Received Amount</th>
+                    <th scope="col">Received Amount Date</th>
+                    <th scope="col">Pending Amount</th>
+                    <th scope="col">Pending Amount Date</th>
                     <th></th>
                   </tr>
                 </thead>
-                <tbody id="inventory-table-body">
+                <tbody id="payment-table-body">
                 </tbody>
               </table>
               <!-- End Table with hoverable rows -->
@@ -234,8 +251,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/inventory.js"></script>
-
+  <script src="assets/js/payment.js"></script>
 
 </body>
 

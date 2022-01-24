@@ -1105,3 +1105,11 @@ h6 {
 .table-hover > tbody > tr:hover > td > i {
   display: inline-block;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
